@@ -1,10 +1,12 @@
+package christmas;
+
 import java.util.Scanner;
 
 /**
  *
  * @author miroslav kramar
  */
-public class VanocniUlohaKramar {
+public class ChristmasMiroslavKramar {
 
     public static void main(String[] args) {
         //variables: parameters
