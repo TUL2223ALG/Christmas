@@ -164,7 +164,7 @@ public class VanocniUlohaKramar {
                     deg = 0;
                 }
             }
-            currentDiameter = (currentDiameter / 5) * 4; //decrease current value of radius to 80% of original value
+            currentDiameter = (currentDiameter / 5) * 4; //decrease current value of radius to 80% of previous value
             currentRadius = currentDiameter / 2;
             verticalOffset -= currentRadius * 2;
             horizontalOffset = (canvasHorizontalSize - currentDiameter) / 2;
