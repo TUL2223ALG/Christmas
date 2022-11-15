@@ -1,10 +1,8 @@
-package vanocniulohaproject;
-
 import java.util.Scanner;
 
 /**
  *
- * @author miros
+ * @author miroslav kramar
  */
 public class VanocniUlohaKramar {
 
