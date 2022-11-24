@@ -1,6 +1,5 @@
 package christmas.u;
 
-import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -24,14 +23,7 @@ public class ChristmasGermanSemin {
     private static int curX = 1;
     private static int curY = 1;
 
-    private static final List<String> gratulace = List.of(
-            " Hezke Vanoce 2022 :) ",
-            " Merry Christmas 2022 :D ",
-            " Jsem krasny Vanocni darek <3 "
-    );
-    private static final String gratulacniVeta = gratulace.stream()
-            .skip(R.nextInt(gratulace.size()))
-            .findFirst().orElseThrow();
+    private static String zprava;
 
     public static void main(String[] args) throws InterruptedException {
         input();
@@ -42,12 +34,14 @@ public class ChristmasGermanSemin {
         System.out.print("Zadej vysku: ");
         height = S.nextInt();
         System.out.print("Zadej sirku: ");
-        width = S.nextInt();
+        width = S.nextInt(); S.nextLine();
+        System.out.print("Zadej zpravu: ");
+        zprava = S.nextLine();
         System.out.print("Zadej intenzitu snehu (1-10): ");
         snowflakeChance = 0.05f * S.nextInt();
 
-        boxWidth = 6 + gratulacniVeta.length();
-        boxHeight = (int) (9 + gratulacniVeta.lines().count());
+        boxWidth = 6 + zprava.length();
+        boxHeight = (int) (9 + zprava.lines().count());
         boxX = (width / 2) - (boxWidth / 2);
         boxY = (height / 2) - (boxHeight / 2);
     }
@@ -80,7 +74,7 @@ public class ChristmasGermanSemin {
                         } else if (curY > boxY && curY < boxY + boxHeight) {
                             if (curX == boxX || curX == boxX + boxWidth) printb('|');
                             else if (curX > boxX + 3 && curX < boxX + boxWidth - 5 && curY == boxY + 5)
-                                printb(gratulacniVeta);
+                                printb(zprava);
                             else if (curX == boxX + boxWidth / 2 && curX != boxY + 5) printb("||");
                             else if ((curX > boxX && curX <= boxX + 3 || curX > boxX + boxWidth - 5 && curX < boxX + boxWidth) && curY == boxY + 5)
                                 printb('=');
