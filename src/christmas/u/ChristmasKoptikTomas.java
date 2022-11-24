@@ -1,7 +1,5 @@
 
-package christmas;
-
-package christmas;
+package christmas.u;
 
 import java.util.Scanner;
 

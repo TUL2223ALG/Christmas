@@ -1,4 +1,4 @@
-package vanocniuloha;
+package christmas.u;
 
 import java.util.Scanner;
 

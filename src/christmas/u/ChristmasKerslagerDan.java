@@ -1,4 +1,4 @@
-package Christmas;
+package christmas.u;
 
 import static java.lang.Math.round;
 import java.util.ArrayList;

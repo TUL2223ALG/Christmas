@@ -1,3 +1,5 @@
+package christmas.u;
+
 import java.util.Scanner;
 import java.util.Random;
 

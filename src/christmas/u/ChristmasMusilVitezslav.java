@@ -1,4 +1,4 @@
-package Christmas;
+package christmas.u;
 import java.util.concurrent.TimeUnit;
 import java.util.Scanner;
 public class ChristmasMusilVitezslav {

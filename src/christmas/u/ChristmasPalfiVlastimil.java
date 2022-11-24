@@ -1,4 +1,4 @@
-package Week06;
+package christmas.u;
 
 import java.util.Scanner;
 

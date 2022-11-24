@@ -1,4 +1,4 @@
-package christmas;
+package christmas.u;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

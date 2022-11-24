@@ -1,5 +1,5 @@
 
-package javaapplication2;
+package christmas.u;
 
 import java.util.Scanner;
 

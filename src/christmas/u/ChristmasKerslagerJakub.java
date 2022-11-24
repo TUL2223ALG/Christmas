@@ -1,4 +1,4 @@
-package Chistmas;
+package christmas.u;
 /**
  * @author Jakub Keršláger
  */
