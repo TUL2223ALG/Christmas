@@ -20,7 +20,7 @@ public class ChristmasSmutnyJan {
     public static void main(String[] args) throws Exception {
         UserInputManager userInputManager = new UserInputManager(System.in);
         TextCreator txtCreator = new TextCreator();
-        txtCreator.WriteText("veci jsou skra");
+        txtCreator.WriteText("vesele vanoce");
         boolean userWantsContinue = true;
         do {
             BuildingDrawer bd = new BuildingDrawer();
